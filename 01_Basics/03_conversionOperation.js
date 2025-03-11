@@ -67,3 +67,41 @@ let someNumber = 33
 let stringNumber = String(someNumber)
 console.log(stringNumber)       // 33
 console.log(typeof stringNumber)    // string
+
+
+// ================================ Operations ===========================
+
+let value = 3
+let negValue = -value
+console.log(negValue);
+
+console.log(2 + 2)
+console.log(2 - 2)
+console.log(2 * 2)
+console.log(2 ** 3)
+console.log(2 / 3)    // 0.6666666666666666
+console.log(2 % 3)
+
+
+let str1 = "hello"
+let str2 = " world"
+let str3 = str1 + str2
+console.log(str3);
+
+console.log("1" + 2);
+console.log(1 + "2");
+console.log("1" + "2");
+console.log(1 + 2 + "5");   // 1 + 2 = 3      // 3 + "5" = 35
+
+console.log(true);      // true
+console.log(+true);     // 1
+
+console.log(+"");       // 0
+console.log(+"xyz");       // NaN
+
+let num1, num2, num3
+num1 = num2 = num3 = 2 + 2
+
+let gameCounter = 100
+console.log(gameCounter++)    // print 100 and then become 101
+console.log(++gameCounter)    // add 1, becomes 102 and then print 102
