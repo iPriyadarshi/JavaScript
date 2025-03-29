@@ -33,4 +33,5 @@ console.log(url.includes("adarsh"));        // true
 const anotherGameName = new String("priyadarshi-kumar-github");
 console.log(anotherGameName.split("-"))     // [ 'priyadarshi', 'kumar', 'github' ]
 
-// create a string in browser console and read about all string methods under Prototype section on internet(MDN docs)
+// create a string in browser console using "new" and read about all string methods under Prototype section on internet(MDN docs)
+// const gameName = new String("iPriyadarshi-pk");
