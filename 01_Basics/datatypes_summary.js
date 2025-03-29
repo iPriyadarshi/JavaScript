@@ -34,3 +34,27 @@ console.log(id == anotherId);       // false
 
 const bigNumber = 632565435645563254364531353n
 console.log(typeof bigNumber);      // bigint
+
+// https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// 2 types of memory: Stack(Primitive), Heap(Non-Primitive)
+
+// string -> stored in Stack
+let myYTname = "abcdotcom"
+let anotherName = myYTname // stores a copy of myYTname in anotherName
+anotherName = "xyzdotcom"  // only copy is changed. original myYTname data not changed
+console.log(myYTname);  // abcdotcom
+console.log(anotherName);   // xyzdotcom
+
+// object -> stored in Heap
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+let userTwo = userOne // doesn't store a copy. Both variable are reference to same object.
+userTwo.email = "user@amazon.com" // changing userTwo also changes userOne as they are referring to same object.
+console.log(userOne.email); // user@amazon.com
+console.log(userTwo.email); // user@amazon.com
